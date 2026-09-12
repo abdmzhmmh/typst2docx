@@ -1,0 +1,35 @@
+# Rust build artifacts
+/target/
+**/*.rs.bk
+
+# Cargo lockfile
+# Note: For binary / CLI projects, Cargo.lock is typically committed to version control
+# to ensure reproducible builds. Uncomment if you ever want to ignore it:
+# Cargo.lock
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS specific files
+Thumbs.db
+.DS_Store
+
+# Local testing and conversion scratch output
+*.docx
+!fixtures/**/*.docx
+scratch/
+
+
+# Added by cargo
+
+/target
